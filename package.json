@@ -1,0 +1,18 @@
+{
+  "name": "icore-design-system",
+  "version": "1.0.0",
+  "description": "iCore Information Systems Design System - color palette, components, and assets",
+  "main": "src/generate.js",
+  "scripts": {
+    "generate": "node src/generate.js",
+    "serve": "npx http-server ./output -p 8080 -o"
+  },
+  "dependencies": {
+    "puppeteer": "^22.0.0"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "author": "iCore Design Team",
+  "license": "MIT"
+}
