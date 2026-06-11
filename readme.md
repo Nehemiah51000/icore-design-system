@@ -1,4 +1,4 @@
-# iCore Information Systems – Design System
+# ICORE Information Systems – Design System
 
 A complete, self‑contained design system for iCore. It includes:
 
