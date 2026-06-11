@@ -10,7 +10,7 @@ const OUTPUT_HTML = path.join(DIST_DIR, 'index.html');
 const FULL_PNG = path.join(DIST_DIR, 'full-page.png');
 const PALETTE_PNG = path.join(DIST_DIR, 'palette-only.png');
 const PDF_PATH = path.join(DIST_DIR, 'design-system.pdf');
-const FAVICON_SRC = path.join(__dirname, 'favicon.png');   // or favicon.ico
+const FAVICON_SRC = path.join(__dirname, 'favicon.png');  
 const FAVICON_DEST = path.join(DIST_DIR, 'favicon.png');
 
 async function ensureDir() {
@@ -34,7 +34,7 @@ async function generate() {
   console.log(`Loading: ${htmlUrl}`);
   await page.goto(htmlUrl, { waitUntil: 'networkidle0', timeout: 30000 });
 
-  // Wait for the color grid to appear (ensure content is rendered)
+ 
   await page.waitForSelector('.color-grid', { timeout: 5000 });
 
   // Full page PNG
